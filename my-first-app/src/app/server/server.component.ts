@@ -7,8 +7,10 @@ import {Component} from "@angular/core";
 })
 
 export class ServerComponent {
-
-  getData = async () => {
-
+  serverId: number = 10;
+  serverStatus: string = "offline";
+  getServerStatus(): string {
+    return this.serverStatus;
   }
+  serverRequestObj: {username: string, age: number} = {username: "Brian", age: 32}
 }
